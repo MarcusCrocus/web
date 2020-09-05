@@ -1,0 +1,225 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    position: relative;
+}
+nav {
+    height: 50px;
+    background-color: #212121;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+.menu .menu_link {
+    color: #ffffff;
+    /* font-family: Roboto; */
+    font-size: 15px;
+    font-weight: 300;
+    /* line-height: 68px; */
+}
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+.subheader {
+    position: absolute;
+    width:100%;
+    height: 84px;
+    /* opacity: 0.6; */ /* использовать нижний код */ 
+    background-color: rgba(0, 0, 0, .6);
+}
+.subheader .subheader_logo {
+    display: block;
+    max-width: 100%; /* если поменбют лого то последующее будет в черте колонки */
+    margin-top: 19px;
+}
+.subheader .subheadr_official {
+    display: block;
+    opacity: 0.5;
+    margin-top: 6px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.subheader .subheader_call {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 19px;
+    text-align: right;
+}
+.subheader .subheader_phone {
+    display: block;
+    margin-top: 8px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.subheader .subheader_btn {
+
+    /* Style for "Rounded Re" */
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: none /* 3px solid rgba(0, 0, 0, 0.07) */;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+
+    /* button_text */
+    margin-top: 19px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    /* font-family: Roboto; */
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 68px; */
+    text-transform: uppercase;
+}
+
+
+.promo{
+    min-height: 800px;
+    background: url('../img/bg/bg.jpg') center center/cover no-repeat; 
+    padding: 150px 0 135px 0;
+}
+.promo .promo_header {
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin: 0;
+}
+.promo .promo_subheader {
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+}
+.promo .promo_descr {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 23px;
+}
+.promo .promo_btn {
+    /* Style for "Rounded Re" */
+    display: block;
+    height: 63px;
+    width: 259px;
+    
+    border-radius: 4px;
+    margin: 118px auto 0 auto;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    border: none/* 3px solid rgba(0, 0, 0, 0.07) */;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    
+    font-size: 18px;
+    font-weight: 400;
+    
+    text-transform: uppercase;
+}
+
+/* что бы одна картинка заехаа под вторую нужно применить position absolut (что бы это сработало родителю даетсиа position relative)
+
+header {
+    position: relative;
+}
+
+.subheader {
+    position: absolute;
+    width:100%; (исправлиаем сплющиване 100% от родителиа)
+
+
+    способ №2
+
+    .promo {
+        transform: translateY(-84px)
+        Z-index:1;
+    }
+    .subheader {
+        position:relative;
+        Z-index:2;
+    }
+    (минус в том что остаетсиа белаиа полоса внизу)
+} */
+
+.reason {
+    padding: 71px 0 65px 0;
+}
+.label{
+    margin: 0 auto;
+    height: 23px;
+    width: 112px;
+    
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.reason .title {
+    margin: 0 auto;
+    margin-top: 38px;
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reason .reason_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.reason .reason_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+    margin-right: 26px;
+
+}
+.reason .reason_block .r_descr{
+    
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    font-weight: 300;
+    width: 341px;
+    
+    
+}
+.r_descr span{
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+
